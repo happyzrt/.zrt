@@ -8,6 +8,9 @@ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
+"yoy complete me
+let g:ycm_global_ycm_extra_conf='~/.zrt/.ycm_extra_conf.py'
+
 "vim display format
 set nu
 set expandtab
