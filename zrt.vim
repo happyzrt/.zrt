@@ -8,7 +8,7 @@ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
-"yoy complete me
+"you complete me
 let g:ycm_global_ycm_extra_conf='~/.zrt/.ycm_extra_conf.py'
 
 "vim display format
@@ -18,6 +18,7 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set autoindent
+set backspace=indent,eol,start
 
 "map keyboard
 nmap <F2> <Esc>:TlistToggle<CR>
