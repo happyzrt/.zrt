@@ -20,6 +20,11 @@ set softtabstop=4
 set autoindent
 set backspace=indent,eol,start
 
+"set encoding
+set fileencodings=utf-8,chinese,latin-1
+set termencoding=utf-8
+set encoding=utf-8
+
 "map keyboard
 nmap <F2> <Esc>:TlistToggle<CR>
 nmap <F4> <Esc>:Explore<CR>
