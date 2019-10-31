@@ -1,11 +1,11 @@
 "vundle configure
 set nocompatible
 filetype off 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"call vundle#end()
 filetype plugin indent on
 
 "you complete me
@@ -29,6 +29,7 @@ set encoding=utf-8
 nmap <F2> <Esc>:TlistToggle<CR>
 nmap <F4> <Esc>:Explore<CR>
 nmap <F5> <Esc>:call Ctags_update()<CR><CR>
+nmap <tab> <Esc>gt
 
 "function
 function! Ctags_update()
