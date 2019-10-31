@@ -30,6 +30,7 @@ nmap <F2> <Esc>:TlistToggle<CR>
 nmap <F4> <Esc>:Explore<CR>
 nmap <F5> <Esc>:call Ctags_update()<CR><CR>
 nmap <tab> <Esc>gt
+nmap <C-w> <Esc>:wq<CR>
 
 "function
 function! Ctags_update()
