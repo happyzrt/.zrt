@@ -1,1 +1,4 @@
 .vimrc
+ycm install:
+1:git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+2:git submodule update --init --recursive
