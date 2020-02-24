@@ -28,10 +28,12 @@ set encoding=utf-8
 
 "map keyboard
 nmap <F2> <Esc>:TlistToggle<CR>
-nmap <F4> <Esc>:Vexplore<CR>
+nmap <F4> <Esc>:Explore<CR>
 nmap <F5> <Esc>:call Ctags_update()<CR><CR>
 nmap <tab> <Esc>gt
-nmap <C-q> <Esc>:wq<CR>
+nmap <C-w> <Esc>:wq<CR>
+nmap <F6> <Esc>:w<CR>
+nmap ` <Esc>:shell<CR>
 
 "function
 function! Ctags_update()
