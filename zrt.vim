@@ -15,8 +15,8 @@ let g:ycm_global_ycm_extra_conf='~/.zrt/.ycm_extra_conf.py'
 "vim display format
 set nu
 set expandtab
-set shiftwidth=4
 set tabstop=4
+set shiftwidth=4
 set softtabstop=4
 set autoindent
 set backspace=indent,eol,start
