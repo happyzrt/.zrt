@@ -1,14 +1,3 @@
-"vundle configure
-"git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-set nocompatible
-filetype off 
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-"Plugin 'VundleVim/Vundle.vim'
-"Plugin 'Valloric/YouCompleteMe'
-"call vundle#end()
-filetype plugin indent on
-
 "you complete me
 let g:ycm_global_ycm_extra_conf='~/.zrt/.ycm_extra_conf.py'
 
