@@ -19,6 +19,8 @@ nmap <F5> <Esc>:call Ctags_update()<CR><CR>
 nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
 imap <C-w> <Esc>:w<CR>
+nmap <C-b> <Esc>:NERDTreeToggle<CR>
+nmap <C-p> <Esc>:FZF<CR>
 nmap <F6> <Esc>:w<CR>
 nmap ` <Esc>:shell<CR>
 
