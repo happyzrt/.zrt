@@ -39,3 +39,8 @@ function! Ctags_update()
     endif
     execute ":cd" . curdir
 endfunction
+
+"for YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.vim/pack/zrt/start/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_use_clangd = 'Always'
+nmap <C-]> :YcmCompleter GoTo<CR>
