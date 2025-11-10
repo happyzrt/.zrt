@@ -13,9 +13,9 @@ set termencoding=utf-8
 set encoding=utf-8
 
 "map keyboard
-nmap <F2> <Esc>:TlistToggle<CR>
-nmap <F4> <Esc>:Explore<CR>
-nmap <F5> <Esc>:GitMessenger<CR>
+nmap <F1> <Esc>:GitMessenger<CR>
+nmap <F2> <Esc>:TagbarToggle<CR>
+nmap <F3> <Esc>:Explore<CR>
 nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
 imap <C-w> <Esc>:w<CR>

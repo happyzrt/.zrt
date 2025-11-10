@@ -9,7 +9,9 @@ then
     git pull
     cd ../nerdtree
     git pull
-    cd ..//git-messenger.vim
+    cd ../git-messenger.vim
+    git pull
+    cd ../tagbar
     git pull
     exit 0
 fi
@@ -19,3 +21,4 @@ git clone https://github.com/ycm-core/YouCompleteMe.git
 git clone https://github.com/junegunn/fzf.git
 git clone https://github.com/preservim/nerdtree.git
 git clone https://github.com/rhysd/git-messenger.vim.git
+git clone https://github.com/preservim/tagbar.git
