@@ -1,0 +1,21 @@
+#!/bin/sh
+if [ -d ~/.vim/pack/zrt/start/ ]
+then
+    echo "update connfig"
+    cd ~/.vim/pack/zrt/start/
+    cd YouCompleteMe
+    git pull
+    cd ../fzf
+    git pull
+    cd ../nerdtree
+    git pull
+    cd ..//git-messenger.vim
+    git pull
+    exit 0
+fi
+mkdir -p ~/.vim/pack/zrt/start/
+cd ~/.vim/pack/zrt/start/
+git clone https://github.com/ycm-core/YouCompleteMe.git
+git clone https://github.com/junegunn/fzf.git
+git clone https://github.com/preservim/nerdtree.git
+git clone https://github.com/rhysd/git-messenger.vim.git

@@ -15,7 +15,7 @@ set encoding=utf-8
 "map keyboard
 nmap <F2> <Esc>:TlistToggle<CR>
 nmap <F4> <Esc>:Explore<CR>
-nmap <F5> <Esc>:call Ctags_update()<CR><CR>
+nmap <F5> <Esc>:GitMessenger<CR>
 nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
 imap <C-w> <Esc>:w<CR>
@@ -24,23 +24,9 @@ nmap <C-p> <Esc>:FZF<CR>
 nmap <F6> <Esc>:w<CR>
 nmap ` <Esc>:shell<CR>
 
-"function
-function! Ctags_update()
-    let curdir=getcwd()
-    while !filereadable("./tags")
-        cd ..
-        if getcwd() == "/" 
-            break
-        endif
-    endwhile
-    if filewritable("./tags")
-        !ctags -R  
-        TlistUpdate
-    endif
-    execute ":cd" . curdir
-endfunction
-
 "for YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/pack/zrt/start/YouCompleteMe/.ycm_extra_conf.py'
 let g:ycm_use_clangd = 'Always'
+let g:ycm_add_preview_to_completeopt = 0
+set completeopt-=preview
 nmap <C-]> :YcmCompleter GoTo<CR>

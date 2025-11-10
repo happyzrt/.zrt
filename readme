@@ -5,3 +5,7 @@ ycm install:
 3:python3 install.py --clangd-completer --go-completer
 4:camke .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 5:ln -s ./build/compile_commands.json
+
+other plugin install:
+git clone https://github.com/rhysd/git-messenger.vim.git
+git clone 
