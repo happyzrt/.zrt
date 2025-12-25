@@ -17,8 +17,8 @@ then
 fi
 mkdir -p ~/.vim/pack/zrt/start/
 cd ~/.vim/pack/zrt/start/
-git clone https://github.com/ycm-core/YouCompleteMe.git
-git clone https://github.com/junegunn/fzf.git
-git clone https://github.com/preservim/nerdtree.git
-git clone https://github.com/rhysd/git-messenger.vim.git
-git clone https://github.com/preservim/tagbar.git
+git clone git@github.com:ycm-core/YouCompleteMe.git
+git clone git@github.com:junegunn/fzf.git
+git clone git@github.com:preservim/nerdtree.git
+git clone git@github.com:rhysd/git-messenger.vim.git
+git clone git@github.com:preservim/tagbar.git
