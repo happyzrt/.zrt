@@ -1,11 +1,6 @@
 .vimrc
-ycm install:
-1:git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/pack/zrt/start/YouCompleteMe
-2:git submodule update --init --recursive
-3:python3 install.py --clangd-completer --go-completer
-4:cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-5:ln -s ./build/compile_commands.json
+coc config:
+CocInstall coc-clangd
 
 other plugin install:
 git clone https://github.com/rhysd/git-messenger.vim.git
-git clone 

@@ -17,7 +17,6 @@ filetype plugin indent on
 
 "map keyboard
 nmap <F1> <Esc>:GitMessenger<CR>
-nmap <F2> <Esc>:TagbarToggle<CR>
 nmap <F3> <Esc>:Explore<CR>
 nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
@@ -27,9 +26,10 @@ nmap <C-p> <Esc>:FZF<CR>
 nmap <F6> <Esc>:w<CR>
 nmap ` <Esc>:shell<CR>
 
-"for YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '~/.vim/pack/zrt/start/YouCompleteMe/.ycm_extra_conf.py'
-let g:ycm_use_clangd = 1
-let g:ycm_add_preview_to_completeopt = 0
-set completeopt-=preview
-nmap <C-]> :YcmCompleter GoTo<CR>
+"for coc
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+nmap <silent><nowait> gd <Plug>(coc-definition)
+nmap <silent><nowait> gy <Plug>(coc-type-definition)
+nmap <silent><nowait> gi <Plug>(coc-implementation)
+nmap <silent><nowait> gr <Plug>(coc-references)
+nmap <F2> <Esc>:CocList symbols<CR>
