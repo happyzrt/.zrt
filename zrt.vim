@@ -22,7 +22,8 @@ nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
 imap <C-w> <Esc>:w<CR>
 nmap <C-b> <Esc>:NERDTreeToggle<CR>
-nmap <C-p> <Esc>:FZF<CR>
+nmap <C-p> <Esc>:Files<CR>
+nmap <C-f> <Esc>:Rg<CR>
 nmap <F6> <Esc>:w<CR>
 nmap ` <Esc>:shell<CR>
 
