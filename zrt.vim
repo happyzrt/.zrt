@@ -17,6 +17,9 @@ filetype plugin indent on
 
 "map keyboard
 nmap <F1> <Esc>:GitMessenger<CR>
+nmap <C-m> <Esc>:GitMessenger<CR>
+nmap <C-g> <Esc>:
+imap <C-g> <Esc>:
 nmap <F3> <Esc>:Explore<CR>
 "nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
@@ -38,3 +41,7 @@ au User lsp_setup call lsp#register_server({
 set foldmethod=expr
   \ foldexpr=lsp#ui#vim#folding#foldexpr()
   \ foldtext=lsp#ui#vim#folding#foldtext()
+
+"for copilot
+imap <silent><script><expr> <C-s> copilot#Suggest()
+imap <silent><script><expr> <C-x> copilot#Dismiss()

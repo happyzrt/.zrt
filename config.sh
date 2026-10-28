@@ -5,6 +5,7 @@ git@github.com:junegunn/fzf.git
 git@github.com:junegunn/fzf.vim.git
 git@github.com:preservim/nerdtree.git
 git@github.com:rhysd/git-messenger.vim.git
+git@github.com:github/copilot.vim.git
 )
 if [ -d ~/.vim/pack/zrt/start/ ]
 then
