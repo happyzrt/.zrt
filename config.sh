@@ -1,6 +1,6 @@
 #!/bin/sh
 plugins=(
-git@github.com:neoclide/coc.nvim.git
+git@github.com:prabirshrestha/vim-lsp.git
 git@github.com:junegunn/fzf.git
 git@github.com:junegunn/fzf.vim.git
 git@github.com:preservim/nerdtree.git

@@ -18,7 +18,7 @@ filetype plugin indent on
 "map keyboard
 nmap <F1> <Esc>:GitMessenger<CR>
 nmap <F3> <Esc>:Explore<CR>
-nmap <tab> <Esc>gt
+"nmap <tab> <Esc>gt
 nmap <C-w> <Esc>:w<CR>
 imap <C-w> <Esc>:w<CR>
 nmap <C-b> <Esc>:NERDTreeToggle<CR>
@@ -27,10 +27,14 @@ nmap <C-f> <Esc>:Rg<CR>
 nmap <F6> <Esc>:w<CR>
 nmap ` <Esc>:shell<CR>
 
-"for coc
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-nmap <silent><nowait> gd <Plug>(coc-definition)
-nmap <silent><nowait> gy <Plug>(coc-type-definition)
-nmap <silent><nowait> gi <Plug>(coc-implementation)
-nmap <silent><nowait> gr <Plug>(coc-references)
-nmap <F2> <Esc>:CocList symbols<CR>
+"for vim-lsp
+nmap <C-[> <Esc>:LspDeclaration<CR>
+nmap <C-]> <Esc>:LspDefinition<CR>
+au User lsp_setup call lsp#register_server({
+    \ 'name': 'clangd',
+    \ 'cmd': {server_info->['clangd']},
+    \ 'allowlist': ['c', 'cpp', 'objc', 'objcpp', 'cuda'],
+    \ })
+set foldmethod=expr
+  \ foldexpr=lsp#ui#vim#folding#foldexpr()
+  \ foldtext=lsp#ui#vim#folding#foldtext()

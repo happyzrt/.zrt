@@ -1,6 +1,1 @@
-.vimrc
-coc config:
-CocInstall coc-clangd
-
-other plugin install:
-git clone https://github.com/rhysd/git-messenger.vim.git
+run bash config.sh to config vim
